@@ -1,2 +1,2 @@
 # Project Website
-<a href="https://algermakiputin.github.io/website1">Visit Website</a>
+<a href="https://github.com/AceXD/website1">Visit Website</a>
