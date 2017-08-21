@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer Parts</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<body>
+	<style>
+	body {
+    	background: url("black.jpg") repeat top;
+    	color:#FFFFFF;
+    	background-color: black;
+		}
+	* {box-sizing:border-box}
+		body {font-family: Verdana,sans-serif;}
+		.mySlides {display:none}
+
+	/* Slideshow container */
+	.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	}
+
+	/* Caption text */
+	.text {
+		color: #f2f2f2;
+		font-size: 50px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+		height: 13px;
+		width: 13px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
+
+	.active {
+		background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	@keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		.text {font-size: 11px}
+	}
+	
+	</style>
+	<div class="topnav">
+<div class="nav">
+<ul>
+  <li><a href="main.html">Home</a></li>
+  <li><a href="products.html">Products</a></li>
+  <li><a><span onclick="openNav()">About Us</span></a><li>
+</ul>
+</div>
+</div>
+
+
+	<div id="header">
+    	<h1>MSI GAMING 9 AC MOTHERBOARD</h1>
+ 	</div>
+
+
+	<br>
+<div style="text-align:center;">
+<div class="slideshow-container">
+	<div class="mySlides fade">
+  	<img src="mb1.png" width="500" height="350">
+	</div>
+
+	<div class="mySlides fade">
+  	<img src="mb2.png" width="500" height="350">
+	</div>
+
+	<div class="mySlides fade">
+  	<img src="mb3.png" width="500" height="350">
+	</div>
+
+</div>
+<br>
+
+<div style="text-align:center;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+<div id="p">
+  <p>
+  <br>
+  <h3>
+    <div id="list" style="text-align: left;">
+    <ul>
+  <li>Supports 4th and 5th Gen Intel® Core™ / Pentium® / Celeron® processors for LGA 1150 socket</li>
+  <li>Supports DDR3-3300(OC) Memory</li>
+  <li>ACK: Use Killer DoubleShot Pro to combine Killer WIFI with Killer LAN for the best online gaming experience</li>
+	<li>M.2 + USB 3.0 + SATA 6Gb/s</li>
+	<li>Xtreme Audio DAC: Experience the Purest Sound Quality</li>
+	<div class="buy"><a href="msi.html"><button>Buy</button></a></div>
+	</ul>
+	</div>
+  </h3><br />
+  </p>
+</div>
+
+
+  <br>
+<div id="footer">
+		Copyright © 2017 Aljon Ignacio. All rights reserved
+</div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="location.html">Location and Contact</a>
+  </div>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</body>
+</html>
