@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer Parts</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<body>
+	<style>
+	body {
+    	background: url("black.jpg") repeat top;
+    	color:#FFFFFF;
+    	background-color: black;
+	}
+
+	</style>
+
+
+	<div class="topnav">
+<div class="nav">
+
+<ul>
+  <li><a href="main.html">Home</a></li>
+  <li><a href="products.html">Products</a></li>
+  <li><a><span onclick="openNav()">About Us</span></a><li>
+</ul>
+</div>
+</div>
+
+	<div id="header">
+    	<h1>About Us</h1>
+ 	</div>
+
+
+<div id="p">
+  <p><center>
+  <h3><br />
+    <img src="logo.jpg" width="200" height="200">
+	<br><br />
+    This started as a small part time business runned by myself. As the years go by<br> our customers slowly grow and so is our business. Now with the launch of our<br> newly opened website we can now provide our services around the country.<br> Our catchphrase is "Build hard, Build smart."
+  </h3><br />
+  </center></p>
+</div>
+
+
+<br><br>
+
+<div id="footer">
+		Copyright © 2017 Aljon Ignacio. All rights reserved
+</div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="location.html">Location and Contact</a>
+  </div>
+
+</div>
+
+<script>
+  /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</body>
+</html>
